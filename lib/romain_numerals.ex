@@ -1,5 +1,4 @@
 defmodule RomainNumerals do
-
   @romain_numerals_list [
     {1000, "M"},
     {900, "CM"},
