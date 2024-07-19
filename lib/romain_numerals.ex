@@ -16,10 +16,12 @@ defmodule RomainNumerals do
     {1, "I"}
   ]
 
+  @spec to_romain(non_neg_integer(), String.t()) :: nonempty_binary()
   def to_romain(target_num, majesty), do: to_romain(target_num, majesty, @romain_numerals_list, "")
 
   defp to_romain(0, majesty, _rest, result), do: "#{majesty} #{result}"
 
+  @spec to_romain(non_neg_integer(), String.t(), list({non_neg_integer(), String.t()}), String.t()) :: nonempty_binary()
   defp to_romain(target_num, majesty, [{arabian, romain} | rest], result) when target_num >= arabian do
     to_romain(target_num - arabian, majesty, [{arabian, romain} | rest], result <> romain)
   end

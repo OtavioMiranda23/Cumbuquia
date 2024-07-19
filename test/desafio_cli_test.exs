@@ -93,7 +93,7 @@ defmodule DesafioCliTest do
     test "coleta nomes antes do enter:" do
       input = "Alice\nBob\n\n"
       output = capture_io([input: input, capture_prompt: false], fn ->
-        names = DesafioCli.get_names()
+        names = CaptureInputs.get_names()
         assert names == ["Alice", "Bob"]
       end)
 
