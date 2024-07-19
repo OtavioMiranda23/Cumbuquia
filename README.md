@@ -4,8 +4,12 @@ Desafio realizado utilizando **Elixir 1.16.2** e **Erlang/OTP 25**.
 
 ## Como rodar
 
-Primeiro, será necessário [instalar o Elixir](https://elixir-lang.org/install.html)
-em versão igual ou superior a **1.16**.
+O build da aplicação já foi feito, tratando-se do arquivo `desafio_cli`. É apenas necessário rodar o comando `escript desafio_cli`.
+
+## Instruções Gerais
+
+Caso seja preciso fazer um novo build, além de ter instaldo [instalar o Elixir](https://elixir-lang.org/install.html)
+em versão igual ou superior a **1.16**,  é necessário: <br>
 
 - Para buildar o projeto, use o comando `mix escript.build` na pasta raiz.
 - Para executar, basta escrever o comando `escript desafio_cli`.
