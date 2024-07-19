@@ -16,7 +16,7 @@ defmodule DesafioCliTest do
     end
 
     Process.put(:inputs, inputs)
-    expected = ["Eduardo", "Maria", "Daniel"]
+    expected = ["Daniel", "Eduardo", "Maria"]
 
     assert DesafioCli.get_name([], read_fn) == expected
   end
