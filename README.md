@@ -8,7 +8,7 @@ O build da aplicação já foi feito, tratando-se do arquivo `desafio_cli`. É a
 
 ## Instruções Gerais
 
-Caso seja preciso fazer um novo build, além de ter instaldo [instalar o Elixir](https://elixir-lang.org/install.html)
+Caso seja preciso fazer um novo build, além de ter instalado [instalar o Elixir](https://elixir-lang.org/install.html)
 em versão igual ou superior a **1.16**,  é necessário: <br>
 
 - Para buildar o projeto, use o comando `mix escript.build` na pasta raiz.
