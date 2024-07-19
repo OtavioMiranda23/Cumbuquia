@@ -15,28 +15,26 @@ em versão igual ou superior a **1.16**.
 ## Features
 
 - **Testes Unitários (ExUnit)** para validação de 
-funcionalidade e prevenção de regressões.  
-<br>
+funcionalidade e prevenção de regressões.  <br>
+
 - **Pattern Matching,  Desconstrução de Lista e Recursão** para processamento eficiente de listas e dados.
-- **Imutabilidade** para garantir segurança e previsibilidade no código.  
-<br>
-- **Typespecs e Dialyzer** para verificação estática de tipos e documentação clara.  
-<br>
-- **Uso de Módulos e Funções Privadas** para modularidade e encapsulamento da lógica.  
-<br>
-- Enumeração e Transformação de Dados com o módulo **Enum e Map**.  
-<br>
-- Separação de Preocupações para uma **arquitetura de código limpa e organizada**.  
-<br>
-- Ferramentas de Qualidade de Código como **Credo** para garantir boas práticas.  
-<br>
-- **Versionamento**, obedecendo Conventional Commits.  
-<br>
+- **Imutabilidade** para garantir segurança e previsibilidade no código. <br>
+
+- **Typespecs e Dialyzer** para verificação estática de tipos e documentação clara. <br>
+
+- **Uso de Módulos e Funções Privadas** para modularidade e encapsulamento da lógica. <br>
+
+- Enumeração e Transformação de Dados com o módulo **Enum e Map**. <br>
+
+- Separação de Preocupações para uma **arquitetura de código limpa e organizada**. <br>
+
+- Ferramentas de Qualidade de Código como **Credo** para garantir boas práticas. <br>
+
+- **Versionamento**, obedecendo Conventional Commits.
 
 ## Planejamento
 
 Optei por construir a aplicação obedecendo o seguinte fluxo: 
-- Captação dos dados de entrada -> Numeração para arábico -> Conversão para algarismos romanos  
+- Captação dos dados de entrada -> Numeração para arábico -> Conversão para algarismos romanos  <br>
 
-<br>
 Procurei demonstrar os dados na tela da mesma maneira que foi solicitada no desafio, ou seja, em colunas, um seguido do outro.
