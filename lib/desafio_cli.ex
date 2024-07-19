@@ -10,7 +10,8 @@ defmodule DesafioCli do
   """
   def main(_args) do
     IO.puts("Olá! Bem-vindo ao numerador de reis e rainhas de Cumbuquia!")
-    IO.puts("Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!")
+    IO.puts("Insira o nome de suas majestades, um por linha.")
+    IO.puts("Quando terminar, pressione enter em uma linha vazia!")
 
     CaptureInputs.get_names()
     |> FrequenciesCounter.calculate_frequencies()

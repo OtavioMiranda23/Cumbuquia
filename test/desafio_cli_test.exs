@@ -9,7 +9,8 @@ defmodule DesafioCliTest do
 
       expected_output = """
       Olá! Bem-vindo ao numerador de reis e rainhas de Cumbuquia!
-      Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!
+      Insira o nome de suas majestades, um por linha.
+      Quando terminar, pressione enter em uma linha vazia!
       Eduardo I
       Maria I
       Daniel I
@@ -25,7 +26,8 @@ defmodule DesafioCliTest do
 
       expected_output = """
       Olá! Bem-vindo ao numerador de reis e rainhas de Cumbuquia!
-      Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!
+      Insira o nome de suas majestades, um por linha.
+      Quando terminar, pressione enter em uma linha vazia!
       João I
       João II
       João III
@@ -42,7 +44,8 @@ defmodule DesafioCliTest do
 
       expected_output = """
       Olá! Bem-vindo ao numerador de reis e rainhas de Cumbuquia!
-      Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!
+      Insira o nome de suas majestades, um por linha.
+      Quando terminar, pressione enter em uma linha vazia!
       aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa I
       aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa II
       bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb I
@@ -56,7 +59,8 @@ defmodule DesafioCliTest do
 
       expected_output = """
       Olá! Bem-vindo ao numerador de reis e rainhas de Cumbuquia!
-      Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!
+      Insira o nome de suas majestades, um por linha.
+      Quando terminar, pressione enter em uma linha vazia!
       """
 
       assert normalize_line_endings(output) == normalize_line_endings(expected_output)
@@ -69,7 +73,8 @@ defmodule DesafioCliTest do
       expected_names = Enum.map(1..100, fn n -> "a #{n_to_roman(n)}" end) |> Enum.join("\n")
       expected_output = """
       Olá! Bem-vindo ao numerador de reis e rainhas de Cumbuquia!
-      Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!
+      Insira o nome de suas majestades, um por linha.
+      Quando terminar, pressione enter em uma linha vazia!
       """ <> expected_names <> "\n"
 
       assert normalize_line_endings(output) == normalize_line_endings(expected_output)
@@ -81,7 +86,8 @@ defmodule DesafioCliTest do
 
       expected_output = """
       Olá! Bem-vindo ao numerador de reis e rainhas de Cumbuquia!
-      Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!
+      Insira o nome de suas majestades, um por linha.
+      Quando terminar, pressione enter em uma linha vazia!
       Alice I
       """
 
