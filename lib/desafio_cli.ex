@@ -12,11 +12,9 @@ defmodule DesafioCli do
     IO.puts("Insira o nome de suas majestades, um por linha. Quando terminar, pressione enter em uma linha vazia!")
 
     get_names()
-    |> IO.inspect()
-    |> count_frequencies()
-    |> IO.inspect()
+    |> FrequenciesCounter.calculate_frequencies()
     |> Enum.map(fn {majesty, num } -> RomainNumerals.to_romain(num, majesty) end)
-    |> IO.inspect()
+    |> Enum.each(fn majesty -> IO.puts(majesty) end)
 
   end
 
@@ -45,16 +43,5 @@ defmodule DesafioCli do
 
   defp add_to_acc(name, names_acc) do
     [name | names_acc]
-  end
-
-  defp count_frequencies(list), do: count_frequencies(list, %{}, [])
-
-  defp count_frequencies([], _counter, result), do: Enum.reverse(result)
-
-  defp count_frequencies([item | rest], counts, result) do
-    count = Map.get(counts, item, 0) + 1
-    new_counts = Map.put(counts, item, count)
-    new_result = [{item, count} | result]
-    count_frequencies(rest, new_counts, new_result)
   end
 end
